@@ -10,10 +10,9 @@
             padding: 1em;
             text-align: center;
             color: white;
-            height: 75vh;
+            height: 25vh;
             font-size: 50px;
-            margin-bottom: 20px;
-        }
+            }
         
         header h1 {
             font-size: 155px;
@@ -30,30 +29,35 @@
         }
         .row-section{
             display: flex;
-            flex-direction: row;
-            height: 100vh;
-            overflow: hidden;
-            padding: 0px 20px 0px 20px;
+            flex-direction: column;
+            justify-content: center;
+            padding: 150px 20px 0px 20px;
+            background: rgb(226, 226, 226);
+            }
+        .row-section-two {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px 20px 50px 20px;
+            background: rgb(226, 226, 226);
         }
         .text-box {
-            width: 50%;
+            width: 100%;
             text-align: center;
             font-size: 30px;
             color: purple;
-            font-weight: heavy;
-            line-height: 41px;
+            line-height: 45px;
             font-family: 'Girassol', cursive;
         }
         .in-box-text {
             padding: 50px 30px 0px 30px;
-
-        }
+            
+            }
         .image-box {
             width: 50%;    
         }
        .image-container {
            width: 100%;
-     
         }
         .image {
             width: 100%;
@@ -61,13 +65,90 @@
         }
         footer{
             background: linear-gradient(180deg, grey, black);
-            font-size: 25px;
-            height: 20vh;
+            font-size: 50px;
+            height: 10vh;
             padding: 2em;
         }
         footer a {
             text-decoration: none;
             color: white;
+        }
+        .in-box-image-container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .in-box-image {
+            width: 50%;
+        }
+        .header-image-container {
+            width: 100%;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        .header-image {
+            width: 50%;
+        }
+        h3 {
+            font-size: 60px;
+            color: #b11717;
+            font-weight: bold;
+        }
+        .menu-button-link {
+            border: 2px solid #b11717;
+            text-decoration: none;
+            color: white;
+            box-shadow: 2px 1px 6px 3px;
+            padding: 10px;
+            background: #b11717;
+            font-weight: normal;
+        }
+        .menu-button-link:hover {
+            cursor: pointer;
+        }
+        @media only screen and (min-device-width: 450px) and (max-device-width: 700px) {
+                .header-image-container {
+                    margin-top: 150px;
+                    
+                    }
+        }
+        @media only screen and (min-device-width: 701px) and (max-device-width: 785px) {
+            .header-image-container {
+                margin-top: 20px;
+                
+            }
+        }
+        @media only screen and (min-device-width: 1024px) {
+            .header-image-container {
+                margin-top: 20px;
+                
+            }
+            .row-section {
+                padding: 170px 20px 0px 20px;
+            }
+        }
+        @media only screen and (min-device-width: 1280px) {
+            header {
+                height: 60vh;
+            }
+            .header-image-container {
+                margin-top: 10px;
+                
+            }
+        }
+        @media only screen and (min-device-width: 1440px) {
+            header {
+                height: 60vh;
+            }
+            .header-image-container {
+                margin-top: 100px;
+                
+            }
+            .row-section {
+                padding: 250px 20px 0px 20px;
+            }
         }
         </style>
     </head>
@@ -76,34 +157,32 @@
             <span class="menu-link"><a href="#"> MENU </a></span>
             <h1>Just Desserts</h1>
             <h2> A Sweetery </h2>
+            <figure class="header-image-container">
+                <img class="header-image" src="justdessertsbuilding.png" alt="some text about the picture">
+            </figure>
         </header>
         <section class="row-section">
             <section class="text-box">
                 <div class="in-box-text">
                    Just Desserts - a Sweetery, is a made to order dessert company catering to the Houston area. 
-                    Established September 2019, we believe in excellence in preparation, integrity in delivery and cost efficiency with every cookie. <br>
-                    <a href="#">See Our Menu</a>
+                    Established September 2019, we believe in excellence in preparation, 
+                    integrity in delivery and cost efficiency with every cookie. <br><br>
+                    <a class="menu-button-link" href="#">See Our Menu</a><br><br>
+                    <figure class="in-box-image-container">
+                        <img class="in-box-image" src="https://res.cloudinary.com/hannahj/image/upload/v1576307862/IMG_3963_2_tmuk7v.jpg" alt="chocolate covered oreos">
+                    </figure>
                 </div>
             </section>
-            <section class="image-box">
-                <figure class="image-container">
-                    <img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576250759/IMG953766_dk2b9h.jpg" alt="Chocolate covered oreos">
-                </figure>
-            </section>
         </section>
-        <section class="row-section">
-        <section class="image-box">
-            <figure class="image-container">
-                <img class="image" src="https://res.cloudinary.com/hannahj/image/upload/v1576806077/endtracking_m3ozuo.jpg" alt="End trafficking picture">
-            </figure>
-        </section>
+        <section class="row-section-two">
         <section class="text-box">
             <div class="in-box-text">
-            More than just desserts, we hope to raise awareness for organizations fighting human trafficking by serving the community sweets for a cause, with
-                a portion of all proceeds going directly to support these organizations. <a href="#"> Click Here</a> for more information.
+           <h3>More than just desserts</h3> <br>
+           We hope to raise awareness for organizations fighting human trafficking by serving the community sweets 
+           for a cause, with a portion of all proceeds going directly to support these organizations. 
+           <a href="#"> Click Here</a> for more information.
             </div>
         </section>
-
         </section>
         <footer>
             <a href="#">Contact Us</a>
